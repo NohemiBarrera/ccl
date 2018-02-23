@@ -3,7 +3,7 @@
 <head>
 	<title>Cryptocurrency Market Capitalizations</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -11,26 +11,36 @@
 <!--Nav-->
 	<ul class="nav">
 	  <li class="nav-item greyTxt">
-	    Cryptocurrencies: <span class="blueTxt">1514</span>
+	  	<strong>
+	    Cryptocurrencies:&nbsp <span class="blueTxt">1514</span>
+		</strong>
 	  </li>
 	  <li class="nav-item greyTxt">
-	    Markets: <span class="blueTxt">8655</span>
+	  	<strong>
+	    Markets:&nbsp <span class="blueTxt">8655</span>
+	    </strong>
+	  </li>
+	  <li class="nav-item greyTxt ml-auto">
+	  	<strong>
+	    Market Cap:&nbsp <span class="blueTxt">$403,174,333,412</span>
+	    </strong>
 	  </li>
 	  <li class="nav-item greyTxt">
-	    Market Cap: <span class="blueTxt">$403,174,333,412</span>
+	  	<strong>
+	    24h Volume:&nbsp <span class="blueTxt">$22,744,438,209</span>
+	    </strong>
 	  </li>
 	  <li class="nav-item greyTxt">
-	    24h Volume: <span class="blueTxt">$22,744,438,209</span>
-	  </li>
-	  <li class="nav-item greyTxt">
-	  	BTC Dominance: <span class="blueTxt">34.8%</span>
+	  	<strong>
+	  	BTC Dominance:&nbsp <span class="blueTxt">34.8%</span>
+	  	</strong>
 	  </li>
 	</ul>
 <!--Nav-->
 <!--Navbar-->
 	<div class="container-fluid">
 		<div class="row">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg navbar-light">
 				<img src="assets/coinmarketcap-icon.png" alt="Coinmarketcap icon">
 				<span><a class="navbar-brand" href="#">Coinmarketcap</a></span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +60,7 @@
 		  				<li class="nav-item">
 		  					<a href="#" class="nav-link">Tools</a>
 		  				</li>
-		  				<li class="nav-item dropdown">
+		  				<li class="nav-item dropdown ml-auto">
 		  					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					         ENG
 					        </a>
@@ -105,20 +115,39 @@
 		<!--Search-->
 	<div class="container-fluid" id="search">
 		<div class="row">
-			<div class="col-sm-10 offset-sm-1">
+			<div class="col-md-10 col-sm-10 offset-sm-1">
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+					<input class="form-control mr-sm-2 search" type="search" placeholder="Search Crypto Currencies..." aria-label="Search">
 			    </form>
 			    <br>
 			    <h6 id="sort">Sort by Industry:</h6>
-			    <button type="button" class="btn btn-light">PAYMENTS</button>
-			    <button type="button" class="btn btn-light">CYBER SECURITY</button>
-			    <button type="button" class="btn btn-light">FORECASTING</button>
-			    <button type="button" class="btn btn-light">INSURANCE</button>
-			    <button type="button" class="btn btn-light">CLOUD STORAGE</button>
-			    <button type="button" class="btn btn-light">CHARITY</button>
-			    <button type="button" class="btn btn-light">TRANSPORT</button>
-			    <button type="button" class="btn btn-light">CUSTOMIZE TAGS</button>
+			    <div class="row" id="sort-btns">		
+				    <button type="button" class="btn btn-light col-sm col-md">PAYMENTS</button>
+				    <button type="button" class="btn btn-light col-sm col-md">CYBER SECURITY</button>
+				    <button type="button" class="btn btn-light col-sm col-md">FORECASTING</button>
+				    <button type="button" class="btn btn-light col-sm col-md">INSURANCE</button>
+				    <button type="button" class="btn btn-light col-sm col-md">CLOUD STORAGE</button>
+				    <button type="button" class="btn btn-light col-sm col-md">CHARITY</button>
+				    <button type="button" class="btn btn-light col-sm col-md">TRANSPORT</button>
+				    <button type="button" class="btn btn-light col-sm col-md">CUSTOMIZE TAGS</button>
+			    </div>
+
+				<div class="dropdown col-sm col-md-1" id="sort-hidde">
+					<button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Sort by Industry
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">PAYMENTS</button>
+						<button class="dropdown-item" type="button">CYBER SECURITY</button>
+						<button class="dropdown-item" type="button">FORECASTING</button>
+						<button class="dropdown-item" type="button">INSURANCE</button>
+						<button class="dropdown-item" type="button">CLOUD STORAGE</button>
+						<button class="dropdown-item" type="button">CHARITY</button>
+						<button class="dropdown-item" type="button">TRANSPORT</button>
+						<button class="dropdown-item" type="button">CUSTOMIZE TAGS</button>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -128,8 +157,8 @@
 	<div class="container" id="coins">
 		<br>
 		<div class="row">
-			<div class="dropdown col-sm">
-				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<div class="dropdown col-sm col-md-1">
+				<button class="btn btn-white dropdown-toggle all" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				All
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -137,8 +166,8 @@
 					<button class="dropdown-item" type="button">Something else</button>
 				</div>
 			</div>
-			<div class="dropdown col-sm">
-				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<div class="dropdown col-sm col-md-1">
+				<button class="btn btn-white dropdown-toggle all" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Coins
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -146,8 +175,8 @@
 					<button class="dropdown-item" type="button">Something else</button>
 				</div>
 			</div>
-			<div class="dropdown col-sm">
-				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<div class="dropdown col-sm col-md-1 mr-auto">
+				<button class="btn btn-white dropdown-toggle all" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Tokens
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -155,8 +184,8 @@
 					<button class="dropdown-item" type="button">Something else</button>
 				</div>
 			</div>
-			<button type="button" class="btn btn-light col-sm">Next 100</button>
-			<button type="button" class="btn btn-light col-sm">View All</button>
+			<button type="button" class="btn btn-white col-sm col-md-1 all" id="btn-next">Next 100</button>
+			<button type="button" class="btn btn-white col-sm-1 all">View All</button>
 		</div>
 		<br>
 <!--Cards-->
@@ -182,7 +211,7 @@
 			<div class="col-sm">
 				Change (24h)
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm">
 				Price Graph
 			</div>
 		</div>
@@ -190,7 +219,7 @@
 			<div class="card-body">
 				<div class="container details">
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-1 txt-center">
 							<h5><strong>1.</strong></h5>
 						</div>
 						<div class="col-sm-3">
@@ -201,23 +230,23 @@
 							<span><a href="#">&nbsp WHITE PAPER</a></span>
 							<span><a href="#">&nbsp REDDIT</a></span>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$157,944,929,52</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center">
 							<h6><strong>$9,379.87</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>16,838,712 BTC</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$7,890,100</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center loss-percent">
 							<h6><strong>-5.36%</strong></h6>
 						</div>
 						<div class="col-sm-2">
-							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+							<div id="chart_bitcoin" style="width: 100%; height: 120px;"></div>
 						</div>
 					</div>
 				</div>
@@ -228,7 +257,7 @@
 			<div class="card-body">
 				<div class="container details">
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-1 txt-center">
 							<h5><strong>2.</strong></h5>
 						</div>
 						<div class="col-sm-3">
@@ -239,23 +268,23 @@
 							<span><a href="#">&nbsp WHITE PAPER</a></span>
 							<span><a href="#">&nbsp REDDIT</a></span>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$157,944,929,52</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center">
 							<h6><strong>$9,379.87</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>16,838,712 BTC</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$7,890,100</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center win-percent">
 							<h6><strong>-5.36%</strong></h6>
 						</div>
 						<div class="col-sm-2">
-							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+							<div id="chart_ethereum" style="width: 100%; height: 120px;"></div>
 						</div>
 					</div>
 				</div>
@@ -266,7 +295,7 @@
 			<div class="card-body">
 				<div class="container details">
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-1 txt-center">
 							<h5><strong>5.</strong></h5>
 						</div>
 						<div class="col-sm-3">
@@ -277,23 +306,23 @@
 							<span><a href="#">&nbsp WHITE PAPER</a></span>
 							<span><a href="#">&nbsp REDDIT</a></span>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$157,944,929,52</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center">
 							<h6><strong>$9,379.87</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>16,838,712 BTC</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$7,890,100</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center loss-percent">
 							<h6><strong>-5.36%</strong></h6>
 						</div>
 						<div class="col-sm-2">
-							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+							<div id="chart_cardano" style="width: 100%; height: 120px;"></div>
 						</div>
 					</div>
 				</div>
@@ -304,7 +333,7 @@
 			<div class="card-body">
 				<div class="container details">
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-1 txt-center">
 							<h5><strong>6.</strong></h5>
 						</div>
 						<div class="col-sm-3">
@@ -315,28 +344,29 @@
 							<span><a href="#">&nbsp WHITE PAPER</a></span>
 							<span><a href="#">&nbsp REDDIT</a></span>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$157,944,929,52</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center">
 							<h6><strong>$9,379.87</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>16,838,712 BTC</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center hidde">
 							<h6><strong>$7,890,100</strong></h6>
 						</div>
-						<div class="col-sm">
+						<div class="col-sm txt-center loss-percent">
 							<h6><strong>-5.36%</strong></h6>
 						</div>
 						<div class="col-sm-2">
-							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+							<div id="chart_stellar" style="width: 100%; height: 120px;"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br>
 	</div>
 <!--Cards-->
 <!--Coins-->

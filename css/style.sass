@@ -2,7 +2,7 @@ body
 	background-color: #f4f5f7
 .nav
 	background-color: #F4F5F7
-	font-size: 0.9rem
+	font-size: 0.75rem
 .blueTxt
 	color: #6FA2FC
 .greyTxt
@@ -40,8 +40,15 @@ h6
 	text-align: center
 h6#sort
 	text-align: left
-div.row#cards-titles
+div.row#cards-titles, div.row#cards-hidde-titles
 	font-size: 0.75rem
+	padding: 0
+	margin-right: 1.5rem
+	display: flex
+	justify-content: center
+	align-items: center
+div.row#cards-hidde-titles
+	display: none
 nav.navbar.navbar-expand-lg
 	background-color: white
 	width: 100%
@@ -56,3 +63,49 @@ span.coin-name
 div.container-fluid#search
 	background-color: white
 	padding: 2rem
+li.nav-item
+	margin: 10px
+ul.navbar-nav.mr-auto
+	width: 100%
+	align-items: center
+.btn
+	font-size: 0.8rem
+button.btn-white
+	background-color: white
+button.btn-light
+	margin: 10px
+button#btn-next
+	margin-right: 10px
+div.txt-center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+div.loss-percent
+	color: red
+div.win-percent
+	color: lightgreen
+span.line
+	width: 100px
+	height: 400px
+div#sort-hidde
+	display: none
+
+@media (min-width: 320px) and (max-width: 768px)
+		div#cards-titles.row
+			display: none
+		div.hidde
+			display: none
+		div#sort-hidde
+			display: inline
+		h6#sort
+			display: none
+		div#sort-btns
+			display: none
+		button.btn.btn-white.dropdown-toggle.all
+			width: 100%
+			margin-bottom: 10px
+		button.btn.btn-white.all
+			margin-bottom: 10px
+		ul.nav
+			display: none
