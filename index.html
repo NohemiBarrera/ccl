@@ -31,7 +31,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#">Coinmarketcap</a>
+				<img src="assets/coinmarketcap-icon.png" alt="Coinmarketcap icon">
+				<span><a class="navbar-brand" href="#">Coinmarketcap</a></span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    		<span class="navbar-toggler-icon"></span>
 		  		</button>
@@ -102,14 +103,14 @@
 	<hr>
 		<!--Navbar-->
 		<!--Search-->
-	<div class="container">
+	<div class="container-fluid" id="search">
 		<div class="row">
-			<div>
+			<div class="col-sm-10 offset-sm-1">
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
 			    </form>
 			    <br>
-			    <h6>Sort by Industry:</h6>
+			    <h6 id="sort">Sort by Industry:</h6>
 			    <button type="button" class="btn btn-light">PAYMENTS</button>
 			    <button type="button" class="btn btn-light">CYBER SECURITY</button>
 			    <button type="button" class="btn btn-light">FORECASTING</button>
@@ -124,7 +125,7 @@
 	<hr>
 <!--Search-->
 <!--Coins-->
-	<div class="container-fluid" id="coins">
+	<div class="container" id="coins">
 		<br>
 		<div class="row">
 			<div class="dropdown col-sm">
@@ -160,16 +161,16 @@
 		<br>
 <!--Cards-->
 		<div class="row" id="cards-titles">
-			<div class="col-sm-1 num">
+			<div class="col-sm-1 num titles">
 				#
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 titles">
 				Name and Description
 			</div>
-			<div class="col-sm">
+			<div class="col-sm titles">
 				Market Cap
 			</div>
-			<div class="col-sm">
+			<div class="col-sm titles">
 				Price
 			</div>
 			<div class="col-sm">
@@ -185,40 +186,152 @@
 				Price Graph
 			</div>
 		</div>
-		<div>
-			<div class="card">
-				<div class="card-body">
-					<div class="container details">
-						<div class="row">
-							<div class="col-sm-1">
-								<p><strong>1.</strong></p>
-							</div>
-							<div class="col-sm-3">
-								<img src="assets/bitcoin.png">
-								<span><strong>Bitcoin</strong></span>
-								<p>It is a long established fact that a reader will be distracted by the readable content 	of a page  when looking  at its layout. <a href="#">Read more...</a></p>
-								<span><a href="#">WEBSITE</a></span>
-								<span><a href="#">WHITE PAPER</a></span>
-								<span><a href="#">REDDIT</a></span>
-							</div>
-							<div class="col-sm">
-								<h6><strong>$157,944,929,52</strong></h6>
-							</div>
-							<div class="col-sm">
-								<h6><strong>$9,379.87</strong></h6>
-							</div>
-							<div class="col-sm">
-								<h6><strong>16,838,712 BTC</strong></h6>
-							</div>
-							<div class="col-sm">
-								<h6><strong>$7,890,100</strong></h6>
-							</div>
-							<div class="col-sm">
-								<h6><strong>-5.36%</strong></h6>
-							</div>
-							<div class="col-sm-2">
-								<div id="chart_div" style="width: 100%; height: 120px;"></div>
-							</div>
+		<div class="card">
+			<div class="card-body">
+				<div class="container details">
+					<div class="row">
+						<div class="col-sm-1">
+							<h5><strong>1.</strong></h5>
+						</div>
+						<div class="col-sm-3">
+							<img src="assets/bitcoin-icon.png" class="icon-coin">
+							<span class="coin-name"><strong>&nbsp Bitcoin</strong></span>
+							<p>It is a long established fact that a reader will be distracted by the readable content 	of a page  when looking  at its layout. <a href="#">Read more...</a></p>
+							<span><a href="#">WEBSITE</a></span>
+							<span><a href="#">&nbsp WHITE PAPER</a></span>
+							<span><a href="#">&nbsp REDDIT</a></span>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$157,944,929,52</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$9,379.87</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>16,838,712 BTC</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$7,890,100</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>-5.36%</strong></h6>
+						</div>
+						<div class="col-sm-2">
+							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-body">
+				<div class="container details">
+					<div class="row">
+						<div class="col-sm-1">
+							<h5><strong>2.</strong></h5>
+						</div>
+						<div class="col-sm-3">
+							<img src="assets/ethereum-icon.png" class="icon-coin">
+							<span class="coin-name"><strong>&nbsp Ethereum</strong></span>
+							<p>It is a long established fact that a reader will be distracted by the readable content 	of a page  when looking  at its layout. <a href="#">Read more...</a></p>
+							<span><a href="#">WEBSITE</a></span>
+							<span><a href="#">&nbsp WHITE PAPER</a></span>
+							<span><a href="#">&nbsp REDDIT</a></span>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$157,944,929,52</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$9,379.87</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>16,838,712 BTC</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$7,890,100</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>-5.36%</strong></h6>
+						</div>
+						<div class="col-sm-2">
+							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-body">
+				<div class="container details">
+					<div class="row">
+						<div class="col-sm-1">
+							<h5><strong>5.</strong></h5>
+						</div>
+						<div class="col-sm-3">
+							<img src="assets/cardano-icon.png" class="icon-coin">
+							<span class="coin-name"><strong>&nbsp Cardano</strong></span>
+							<p>It is a long established fact that a reader will be distracted by the readable content 	of a page  when looking  at its layout. <a href="#">Read more...</a></p>
+							<span><a href="#">WEBSITE</a></span>
+							<span><a href="#">&nbsp WHITE PAPER</a></span>
+							<span><a href="#">&nbsp REDDIT</a></span>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$157,944,929,52</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$9,379.87</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>16,838,712 BTC</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$7,890,100</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>-5.36%</strong></h6>
+						</div>
+						<div class="col-sm-2">
+							<div id="chart_div" style="width: 100%; height: 120px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-body">
+				<div class="container details">
+					<div class="row">
+						<div class="col-sm-1">
+							<h5><strong>6.</strong></h5>
+						</div>
+						<div class="col-sm-3">
+							<img src="assets/stellar-icon.png" class="icon-coin">
+							<span class="coin-name"><strong>&nbsp Stellar</strong></span>
+							<p>It is a long established fact that a reader will be distracted by the readable content 	of a page  when looking  at its layout. <a href="#">Read more...</a></p>
+							<span><a href="#">WEBSITE</a></span>
+							<span><a href="#">&nbsp WHITE PAPER</a></span>
+							<span><a href="#">&nbsp REDDIT</a></span>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$157,944,929,52</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$9,379.87</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>16,838,712 BTC</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>$7,890,100</strong></h6>
+						</div>
+						<div class="col-sm">
+							<h6><strong>-5.36%</strong></h6>
+						</div>
+						<div class="col-sm-2">
+							<div id="chart_div" style="width: 100%; height: 120px;"></div>
 						</div>
 					</div>
 				</div>
